@@ -53,8 +53,7 @@ $session = \config\services::session()
             <!-- LOGO -->
             <div class="topbar-left m-b-5">
                 <div class="text-center">
-                    <a href="<?= base_url() ?>/Beranda" class="logo">KLINIK DR. YANTI</a><a
-                        style="font-weight:bold;"></a>
+                    <a href="<?= base_url() ?>/Beranda" class="logo">KLASEMEN SEPAKBOLA</a><a style="font-weight:bold;"></a>
 
                     <!-- <a href="index.html" class="logo"><img src="assets/images/logo.png" height="24" alt="logo"></a> -->
                 </div>
@@ -89,22 +88,12 @@ $session = \config\services::session()
                         <ul class="list-inline float-right mb-0">
                             <li class="list-inline-item dropdown notification-list">
 
-                                <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user"
-                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 
-                                    <?php
-                                    $this->db = \config\Database::connect();
-                                    $session = \config\services::session();
-                                    $id_user = $session->get('id_user');
-                                    $query_cekuser = $this->db->query("SELECT * from tbl_user  WHERE id_user='$id_user'");
-                                    $row = $query_cekuser->getRow();
 
-                                    ?>
                                     <span style="color: dimgray;" class="mr-2 d-none d-lg-inline text-gray-600 small">
-                                        Welcome!, <?= $row->nama_user ?></span>
-                                    <img src="<?= base_url() ?>/assets/images/profil/<?= $row->foto ?>" alt="user"
-                                        class="rounded-circle">
+                                        Welcome!, to Sistem Informasi Klasemen Sepakbola</span>
+
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                                     <!-- item-->
@@ -112,8 +101,7 @@ $session = \config\services::session()
                                         Welcome
                                     </div>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="<?= base_url() ?>/Logout"><i
-                                            class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                                 </div>
                             </li>
 
@@ -151,7 +139,7 @@ $session = \config\services::session()
                                             </li>
                                         </ol>
                                     </div>
-                                    <h4 style="font-weight: 600;" class="page-title">SISTEM INFORMASI KLINIK DR.YANTI
+                                    <h4 style="font-weight: 600;" class="page-title">SISTEM INFORMASI KLASEMEN SEPAKBOLA
                                     </h4>
                                 </div>
 
@@ -172,7 +160,7 @@ $session = \config\services::session()
 
 
             <footer class="footer">
-                © 2022 Klinik Dr.yanti
+                © 2023 ALDY NIFRATAMA
             </footer>
 
         </div>

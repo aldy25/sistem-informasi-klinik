@@ -2,27 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Models\Modelakun;
-use App\Models\Modelpasien;
-use App\Models\Modelrm;
-use App\Models\Modelriwayat;
-use App\Models\Modelantigen;
-use App\Models\Modelkir;
-use App\Models\Modelkb;
-use App\Models\Modelvitamin;
-use App\Models\Modelsakit;
-use App\Models\Modellayanan;
-use App\Models\Modelobat;
-
-
-use App\Models\Modeloperasi;
-use App\Models\Modeljahit;
-use App\Models\Modelkolestrol;
-use App\Models\Modelasamurat;
-use App\Models\Modelsunat;
-use App\Models\Modelmasuk;
-use App\Models\Modelkeluar;
-use App\Models\Modelresep;
+use App\Models\Modelklub;
+use App\Models\Modelpertandingan;
+use App\Models\Modelklasemen;
 
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\CLIRequest;
@@ -71,24 +53,8 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
         $this->session = \Config\Services::session();
-        $this->Akun = new Modelakun();
-        $this->Pasien = new Modelpasien();
-        $this->Rm = new Modelrm();
-        $this->Riwayat = new Modelriwayat();
-        $this->Antigen = new Modelantigen();
-        $this->Kb = new Modelkb();
-        $this->Kir = new Modelkir();
-        $this->Vitamin = new Modelvitamin();
-        $this->Sakit = new Modelsakit();
-        $this->Operasi = new Modeloperasi();
-        $this->Jahit = new Modeljahit();
-        $this->Kolestrol = new Modelkolestrol();
-        $this->Asamurat = new Modelasamurat();
-        $this->Sunat = new Modelsunat();
-        $this->Layanan = new Modellayanan();
-        $this->Obat = new Modelobat();
-        $this->Masuk = new Modelmasuk();
-        $this->Keluar = new Modelkeluar();
-        $this->Resep = new Modelresep();
+        $this->Klub = new Modelklub();
+        $this->Pertandingan = new Modelpertandingan();
+        $this->Klasemen = new Modelklasemen();
     }
 }
